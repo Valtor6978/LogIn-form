@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Guy;
+    src: url(font/Luckiest_Guy/LuckiestGuy-Regular.ttf);
+}
+
+@font-face {
+    font-family: langar;
+    src: url(font/Langar-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/desktopBG.svg);
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    height: fit-content;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #277297;
+    border: 1px solid #256b8e;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 50px;
+}
+
+.circle {
+    background-color: #081A28;
+    width: 130px;
+    height: 130px;
+    border:10px solid #1D4E6B;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0,115px);
+}
+
+.circle img {
+    width: 60px;
+    margin-top: 15px;
+}
+
+
+label {
+    display: block;
+    margin-top: 0px;
+    font-weight: bold;
+    background-color: #081A28;
+    border-radius: 50px;
+    height: 60px;
+}
+
+/* .label-Div {
+    margin-top: 65px;
+} */
+
+.img1 {
+    width: 8%;
+    margin-right: 7px;
+    transform: translate(15px,10px);
+}
+.img2 {
+    width: 12%;
+    transform: translate(8px,8px);
+}
+input[type="text"], input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #D9D9D9;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+input[type="password"] {
+    transform: translate(-8px,-20px);
+}
+@media (min-width:650px) {
+    input[type="text"] {
+        transform: translate(3px,-8px);       
+       /*  برای وسط چین شدن اینپوت یوزرنیم در حالت دکستاپ */
+    }
+
+    .img1 {
+        width: 8%;
+        margin-right: 7px;
+        transform: translate(15px,5px);
+    }
+    .img2 {
+        width: 12%;
+        transform: translate(8px,0px);
+    }
+}
+
+input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #9CDDFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: langar;
+    transition: all 1s;
+}
+
+input[type="submit"]:hover {
+    background-color: #8bbad3;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 80%;
+    font-family: langar;
+
+}
+
+.p1 {
+    color: #D9D9D9;
+    font-family: Guy;
+    font-size: x-large;
+}
+.p1 span {
+    color: #FFB1B1;
+}
+
+.p2 {
+    color: #D9D9D9;
+    font-family: Guy;
+    font-size: large;
+    margin-left: 75%;
+    margin-top: -10px;
+}
+.p2 span {
+    color: #FFB1B1;
+}
+.img3 {
+    width: 40px;
+    transform: translate(365px,-60px);
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 400px;
+    }
+    body{
+        background-image: url(img/phoneBG.svg);
+    }
+    input[type="password"] {
+        transform: translate(-8px,-10px);
+    }
+    .img3 {
+    width: 40px;
+    transform: translate(290px,-60px);
+}
+}
